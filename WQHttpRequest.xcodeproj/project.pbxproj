@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7DF8DCB3748689B053F17B8 /* libPods-WQHttpRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 075D6F077B34358A1FA32322 /* libPods-WQHttpRequest.a */; };
 		C9A5BC551E7A64DC008DED8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5BC541E7A64DC008DED8B /* main.m */; };
 		C9A5BC581E7A64DC008DED8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5BC571E7A64DC008DED8B /* AppDelegate.m */; };
 		C9A5BC5B1E7A64DC008DED8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5BC5A1E7A64DC008DED8B /* ViewController.m */; };
 		C9A5BC5E1E7A64DC008DED8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A5BC5C1E7A64DC008DED8B /* Main.storyboard */; };
 		C9A5BC601E7A64DC008DED8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A5BC5F1E7A64DC008DED8B /* Assets.xcassets */; };
 		C9A5BC631E7A64DC008DED8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A5BC611E7A64DC008DED8B /* LaunchScreen.storyboard */; };
+		C9A5BC6C1E7A68D9008DED8B /* WQRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5BC6B1E7A68D9008DED8B /* WQRequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075D6F077B34358A1FA32322 /* libPods-WQHttpRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQHttpRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		898971AFA98EE15CD76F9F6A /* Pods-WQHttpRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQHttpRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WQHttpRequest/Pods-WQHttpRequest.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A5BC501E7A64DC008DED8B /* WQHttpRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQHttpRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A5BC541E7A64DC008DED8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9A5BC561E7A64DC008DED8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		C9A5BC5F1E7A64DC008DED8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A5BC621E7A64DC008DED8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A5BC641E7A64DC008DED8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A5BC6A1E7A68D9008DED8B /* WQRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQRequestManager.h; sourceTree = "<group>"; };
+		C9A5BC6B1E7A68D9008DED8B /* WQRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQRequestManager.m; sourceTree = "<group>"; };
+		DAB39C80436882FDBC0C81F6 /* Pods-WQHttpRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQHttpRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WQHttpRequest/Pods-WQHttpRequest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DF8DCB3748689B053F17B8 /* libPods-WQHttpRequest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290689675BE1B4ECB33CAA4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				898971AFA98EE15CD76F9F6A /* Pods-WQHttpRequest.debug.xcconfig */,
+				DAB39C80436882FDBC0C81F6 /* Pods-WQHttpRequest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5DADB9CD04CEFC140FF32791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				075D6F077B34358A1FA32322 /* libPods-WQHttpRequest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9A5BC471E7A64DC008DED8B = {
 			isa = PBXGroup;
 			children = (
 				C9A5BC521E7A64DC008DED8B /* WQHttpRequest */,
 				C9A5BC511E7A64DC008DED8B /* Products */,
+				290689675BE1B4ECB33CAA4D /* Pods */,
+				5DADB9CD04CEFC140FF32791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,8 @@
 				C9A5BC571E7A64DC008DED8B /* AppDelegate.m */,
 				C9A5BC591E7A64DC008DED8B /* ViewController.h */,
 				C9A5BC5A1E7A64DC008DED8B /* ViewController.m */,
+				C9A5BC6A1E7A68D9008DED8B /* WQRequestManager.h */,
+				C9A5BC6B1E7A68D9008DED8B /* WQRequestManager.m */,
 				C9A5BC5C1E7A64DC008DED8B /* Main.storyboard */,
 				C9A5BC5F1E7A64DC008DED8B /* Assets.xcassets */,
 				C9A5BC611E7A64DC008DED8B /* LaunchScreen.storyboard */,
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A5BC671E7A64DC008DED8B /* Build configuration list for PBXNativeTarget "WQHttpRequest" */;
 			buildPhases = (
+				C25800B88A339A3B49D1A1BE /* [CP] Check Pods Manifest.lock */,
 				C9A5BC4C1E7A64DC008DED8B /* Sources */,
 				C9A5BC4D1E7A64DC008DED8B /* Frameworks */,
 				C9A5BC4E1E7A64DC008DED8B /* Resources */,
+				9FC2CA871BDF656754362F2F /* [CP] Embed Pods Frameworks */,
+				37AE03366F9E0BDE8C264C67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +142,7 @@
 				TargetAttributes = {
 					C9A5BC4F1E7A64DC008DED8B = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -145,12 +177,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37AE03366F9E0BDE8C264C67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQHttpRequest/Pods-WQHttpRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC2CA871BDF656754362F2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQHttpRequest/Pods-WQHttpRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C25800B88A339A3B49D1A1BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9A5BC4C1E7A64DC008DED8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9A5BC5B1E7A64DC008DED8B /* ViewController.m in Sources */,
+				C9A5BC6C1E7A68D9008DED8B /* WQRequestManager.m in Sources */,
 				C9A5BC581E7A64DC008DED8B /* AppDelegate.m in Sources */,
 				C9A5BC551E7A64DC008DED8B /* main.m in Sources */,
 			);
@@ -268,8 +349,10 @@
 		};
 		C9A5BC681E7A64DC008DED8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898971AFA98EE15CD76F9F6A /* Pods-WQHttpRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WQHttpRequest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangqiang.WQHttpRequest;
@@ -279,8 +362,10 @@
 		};
 		C9A5BC691E7A64DC008DED8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB39C80436882FDBC0C81F6 /* Pods-WQHttpRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WQHttpRequest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangqiang.WQHttpRequest;
@@ -307,6 +392,7 @@
 				C9A5BC691E7A64DC008DED8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
